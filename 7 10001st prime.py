@@ -6,6 +6,7 @@ What is the 10 001st prime number?
 Start: Sep/04/2021 12:30am
 Finished: Sep/04/2021 6:00pm
 """
+
 from itertools import repeat
 
 # sieve of eratosthenes
@@ -33,5 +34,5 @@ def nth_prime(nth):
     
     return primes[nth-1]
 
-n = int(input("Nth Prime to Find: "))
-print(f"Prime: {nth_prime(n)}")
+n = 10_001
+print(f"The {n} Prime Is: {nth_prime(n)}")
