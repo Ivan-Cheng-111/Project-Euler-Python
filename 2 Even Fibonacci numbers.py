@@ -15,5 +15,6 @@ def compute(max):
         x, y = y, x+y
     yield sum
 
-# 4e6 is 4mil in index notation
-for i in compute(4e6): print(f"Sum of All Even Fibonacci Numbers Less Than 4 Million Is: {i}")
+# next once because generator only yeilds sum
+n = 4_000_000
+print(f"Sum of All Even Fibonacci Numbers Less Than 4 Million Is: {next(compute(n))}")
