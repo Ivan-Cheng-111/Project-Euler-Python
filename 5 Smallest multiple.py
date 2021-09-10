@@ -50,11 +50,13 @@ def prime_factors(num) -> list:
 
 # alternative LONG way
 def compute2(lower, upper):
-    NUMS = [n for n in range(lower,upper+1)]
     num_factors = []
-    for i in NUMS:
+    # get prime factors of numbers
+    for i in reversed(range(lower, upper+1)):
         num_factors += [prime_factors(i)]
+    
     mlt = []
+    # find the highest occuring counts of prime p, exponentiate to get its value, and multiply everything
     for p in primes_between(lower, upper):
         max_occurance = max(e.count(p) for e in num_factors)
         mlt.append(p**max_occurance)
@@ -65,6 +67,7 @@ def compute2(lower, upper):
 
 def compute(lower, upper):
 	ans = 1
+    # same thing as getting lcm of all the numbers
 	for i in range(lower, upper+1):
 		ans = lcm(i, ans)
 	return str(ans)
