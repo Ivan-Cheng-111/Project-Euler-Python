@@ -22,7 +22,7 @@ def compute(nth):
 
         for i in range(k + n):
             pk = primes[i]
-            start = segment_min + ((pk - (segment_min % pk) % pk))
+            start = segment_min + ((pk - (segment_min % pk)) % pk)
             is_prime[start - segment_min::pk] = repeat(False, len(range(start - segment_min, segment_len, pk)))
 
         primes.extend([x for x, is_prime in zip(segment, is_prime) if is_prime])
