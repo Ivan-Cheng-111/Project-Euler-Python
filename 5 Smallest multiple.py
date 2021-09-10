@@ -48,7 +48,7 @@ def prime_factors(num) -> list:
     factors.append(num)
     return factors
 
-# the LONG way
+# alternative LONG way
 def compute2(lower, upper):
     NUMS = [n for n in range(lower,upper+1)]
     num_factors = []
@@ -70,4 +70,4 @@ def compute(lower, upper):
 	return str(ans)
 
 lower, upper = 1, 20
-print(f"Smallest Number Divisible by Numbers Between {lower} And {upper} Is: {compute2(lower, upper)}")
+print(f"Smallest Number Divisible by Numbers Between {lower} And {upper} Is: {compute(lower, upper)}")
