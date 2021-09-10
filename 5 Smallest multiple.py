@@ -73,4 +73,4 @@ def compute(lower, upper):
 	return str(ans)
 
 lower, upper = 1, 20
-print(f"Smallest Number Divisible by Numbers Between {lower} And {upper} Is: {compute(lower, upper)}")
+print(f"Smallest Number Divisible by Numbers Between {lower} and {upper} Is: {compute(lower, upper)}")
