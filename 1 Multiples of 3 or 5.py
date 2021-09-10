@@ -16,4 +16,5 @@ def compute(max):
     # loop i to 999, check if i divisible by 3 or 5, add to list, then sum list 
     return sum(i for i in range(1000) if i % 3 == 0 or i % 5 == 0)
 
-print(f"Sum of All the Multiples of 3 or 5 Is {compute(1000)}")
+n = 1000
+print(f"Sum of All the Multiples of 3 or 5 Under {n} Is: {compute(n)}")
