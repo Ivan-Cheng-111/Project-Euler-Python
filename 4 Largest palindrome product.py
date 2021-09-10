@@ -34,9 +34,10 @@ def compute(n):
             # break if prdct is smaller than max_prdct since j is decrementing, prdct will only get smaller each loop
             if prdct < max_prdct:
                 break
+            # check if palindrome
             if str(prdct)[::-1] == str(prdct):
                 max_prdct = prdct
-                # break since j is decrementing, largest possible palindrome in already found
+                # break since j is decrementing, largest possible palindrome is already found
                 break
     return max_prdct
 
