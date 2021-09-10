@@ -4,7 +4,7 @@ Finished: Sep/10/2021 9:45pm
 """
 
 from itertools import repeat
-from bisect import bisect_right
+from bisect import bisect_left
 
 # sieve of eratosthenes
 def compute(n):
@@ -29,8 +29,7 @@ def compute(n):
         primes.extend([x for x, is_prime in zip(segment, is_prime) if is_prime])
         end_segment += a
     
-    n = bisect_right(primes,n-1)
-    return sum(primes[:n])
+    return sum(primes[:bisect_left(primes,n)])
 
 n = 2_000_000
 print(f"Sum of All the Primes Below 2 Million Is: {compute(n):,}")
