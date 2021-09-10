@@ -3,7 +3,9 @@ Start: Sep/09/2021 11:55pm
 Finished: Sep/09/2021 1:45am
 """
 
-num = """73167176531330624919225119674426574742355349194934\
+from math import prod
+
+NUM = """73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
 85861560789112949495459501737958331952853208805511\
 12540698747158523863050715693290963295227443043557\
@@ -24,22 +26,21 @@ num = """73167176531330624919225119674426574742355349194934\
 05886116467109405077541002256983155200055935729725\
 71636269561882670428252483600823257530420752963450"""
 
-def compute(n_seg):
-    max_seg = ""
-    max_sum = 0
-    for s in range(len(num)-n_seg+1):
-        seg = num[s:s+n_seg]
+def compute(n):
+    max_prod = 0
+    for i in range(len(NUM)-n-1):
+        # segment entire number string by 4s
+        seg = NUM[i:i+n]
         if "0" in seg:
             continue
-        ttl = sum(int(n) for n in seg)
-        if ttl > max_sum:
-            max_sum, max_seg = ttl, seg
-    prdct = 1
-    for n in max_seg:
-        prdct *= int(n)
-    return [int(n) for n in max_seg] + [prdct]
 
-n=13
-val = compute(n)
-print(f"The {n} Adjacent Digits With the Greatest Product Is: {val[:-1]}")
-print(f"The Value of the Product Is: {val[-1]}")
+        # find product of segment
+        prdct = prod(int(e) for e in seg)
+        
+        # compare and update max product
+        if prdct > max_prod:
+            max_prod = prdct
+    return max_prod
+
+n = 13
+print(f"The Greatest Product of {n} Adjacent Digits Is: {compute(n)}")
