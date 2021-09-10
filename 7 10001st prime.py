@@ -6,7 +6,7 @@ Finished: Sep/04/2021 6:00pm
 from itertools import repeat
 
 # sieve of eratosthenes
-def nth_prime(nth):
+def compute(nth):
     primes = [2, 3, 5, 7]
     end_segment = 1
     extend_at_most_n_segments_target = 10
@@ -31,4 +31,4 @@ def nth_prime(nth):
     return primes[nth-1]
 
 n = 10_001
-print(f"The {n} Prime Is: {nth_prime(n)}")
+print(f"The {n} Prime Is: {compute(n)}")
