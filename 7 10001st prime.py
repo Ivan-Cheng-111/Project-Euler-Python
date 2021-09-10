@@ -31,4 +31,4 @@ def compute(nth):
     return primes[nth-1]
 
 n = 10_001
-print(f"The {n:_} Prime Is: {compute(n):,}")
+print(f"The {n:_} Prime Is: {compute(n)}")
