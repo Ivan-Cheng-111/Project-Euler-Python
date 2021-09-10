@@ -32,5 +32,5 @@ def compute(num) -> int:
     # if no factors found, the number itself is the only factor
     return num
 
-largest_factor = compute(600851475143)
-print(f"Largest Prime Factor of 600851475143 Is: {largest_factor}")
+n = 600851475143
+print(f"Largest Prime Factor of {n} Is: {compute(n)}")
