@@ -5,7 +5,7 @@ Finished: Sep/04/2021 6:00pm
 
 from itertools import repeat
 
-# sieve of eratosthenes
+# segemented sieve of eratosthenes
 def compute(nth):
     primes = [2, 3, 5, 7]
     end_segment = 1
