@@ -1,6 +1,6 @@
 """ Problem 10
 Start: Sep/10/2021 9:10pm
-Finished: Sep/10/2021 9:45pm
+Finished: Sep/11/2021 8:10pm
 """
 
 from itertools import repeat
