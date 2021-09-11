@@ -17,4 +17,4 @@ def compute(max):
 
 # next once because generator only yeilds sum
 n = 4_000_000
-print(f"Sum of All Even Fibonacci Numbers Less Than 4 Million Is: {next(compute(n))}")
+print(f"Sum of All Even Fibonacci Numbers Less Than {n:_} Is: {next(compute(n))}")
