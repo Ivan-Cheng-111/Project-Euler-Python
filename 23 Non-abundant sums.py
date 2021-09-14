@@ -1,6 +1,6 @@
 """ Problem 23
 Start: Sep/14/2021 9:25pm
-Finished: Sep/14/2021 9:20pm
+Finished: Sep/14/2021 11:35pm
 """
 
 from math import ceil
