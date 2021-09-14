@@ -5,7 +5,6 @@ Finished: Sep/14/2021 7:45pm
 from math import isqrt
 
 def sum_divisors(n):
-    # sum of divisors
 	return sum(i for i in range(1, n) if n % i == 0)
 
 def compute(n):
