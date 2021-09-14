@@ -1,6 +1,6 @@
 """ Problem 22
 Start: Sep/14/2021 9:00pm
-Finished: Sep/14/2021 7:45pm
+Finished: Sep/14/2021 9:20pm
 """
 
 txt = open("C:\\Users\\Ivan\\Documents\\.Programming\\Project Euler\\.resources\\22 names.txt", "r")
