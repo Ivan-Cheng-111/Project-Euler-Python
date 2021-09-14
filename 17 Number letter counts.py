@@ -46,4 +46,6 @@ def num_to_eng(num):
         total += 3
     return total
 
-print(compute(1,1000))
+lower = 1
+upper = 1000
+print(f"The Number of Letters Used Between {lower} and {upper} Is: {compute(lower, upper)}")
