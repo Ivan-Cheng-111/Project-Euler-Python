@@ -7,8 +7,6 @@ from math import ceil
 
 # sieve of eratosthenes inspired
 def compute():
-    # largest number that cannot be represented by the sum of two abundant numbers
-    lower = 12
     LIMIT = 28123
 
     # make list of 0s sized LIMIT
@@ -18,7 +16,6 @@ def compute():
             divisor_sums[pos] += n
 
     abundant = [n for n,divisor_sum in enumerate(divisor_sums) if n < divisor_sum]
-    
     
     # make boolen list sized LIMIT
     is_not_abundant = [True] * LIMIT
