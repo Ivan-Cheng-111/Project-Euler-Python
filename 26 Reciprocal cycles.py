@@ -15,7 +15,8 @@ def cycle_len(n):
         x = x * 10 % n
 
 
-def compute(n):
-    return max(range(1,n+1),key=cycle_len)
+def compute(d):
+    return max(range(1,d+1),key=cycle_len)
 
-print(compute(1000))
+d = 1000
+print(f"The Value of 1/d <{d} Containing the Longest Recurring Cycle Is: {compute(d)}")

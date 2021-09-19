@@ -12,4 +12,4 @@ def compute(MAX):
 	return sum_of_diags
 
 n = 1001
-print(compute(n))
+print(f"Sum of the Diagonal Numbers in a {n} by {n} Spiral Is: {compute(n)}")

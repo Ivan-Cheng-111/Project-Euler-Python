@@ -34,4 +34,4 @@ def compute():
 					max_vals = [a,b]
 	return prod(max_vals)
 
-print(compute())
+print(f"The Products of a b for the Quadratic Equation With the Most Number of Consecutive Primes Is: {compute()}")

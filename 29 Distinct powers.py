@@ -11,4 +11,4 @@ def compute(a_max,b_max):
 	return len(terms)
 
 a_max, b_max = 100, 100
-print(compute(100,100))
+print(f"The Number of Distinct Terms in Sequence a^b for a,b Max {a_max},{b_max} Is: {compute(a_max,b_max)}")
